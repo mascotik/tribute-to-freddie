@@ -1,0 +1,29 @@
+.header {
+
+    background-color: $gl_color_medium_brown;
+
+    .nav {
+        display: flex;
+        margin: 1rem;
+        justify-content: flex-end;
+      }
+
+      .nav__link {
+        padding: 0.1rem 1rem 0.1rem 1rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $gl_color_white_grey;
+        transition: 1s background-color, 1s text-decoration;
+
+        &:last-child {
+          margin-right: 20px;
+        }
+
+        &:hover {
+          background-color: lighten($color: $gl_color_medium_brown, $amount: 20);
+          color: lighten($color: $gl_color_creme, $amount: 30);
+          text-decoration: underline;
+        }
+      }
+
+}

@@ -1,0 +1,131 @@
+.tribute-info {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.title-photo-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  min-width: 300px;
+  min-height: 600px;
+
+  @media screen and (max-width: 900px) {
+    flex-flow: column-reverse;
+  }
+
+  .title__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 40%;
+    min-width: 450px;
+
+    height: 100%;
+    margin: 0;
+
+    .title {
+      display: flex;
+      flex-direction: column;
+      height: 50%;
+
+      .title__head {
+        font-family: Dancing Script;
+        font-size: 2.7rem;
+        font-weight: bold;
+        text-align: center;
+        color: $gl_color_red;
+
+        transition: 1s font-size;
+
+        @media screen and (min-width: 960px) {
+          font-size: 3.5rem;
+          transition: 1s font-size;
+        }
+      }
+
+      .title__body {
+        font-family: Dancing Script;
+        font-size: 3rem;
+        color: $gl_color_creme;
+        transition: 0.5s font-size;
+
+        animation: fade 1s;
+
+        @keyframes fade {
+          0% {
+            opacity: 0;
+          }
+
+          100% {
+            opacity: 1;
+          }
+        }
+
+        @media screen and (min-width: 960px) {
+          font-size: 5rem;
+          transition: 1s font-size;
+        }
+      }
+    }
+
+    .quote__container {
+      margin: 50px auto 15px auto;
+
+      height: 50%;
+      .quote {
+        background-color: lighten($color: $gl_color_dark, $amount: 15);
+        text-align: justify;
+        margin: 5px 5px 5px 5px;
+        max-width: 25rem;
+
+        .who_quote {
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  .photo__container {
+    display: flex;
+    min-width: 250px;
+    width: 40%;
+    overflow: hidden;
+
+    figure {
+      margin: 0;
+      padding: 0;
+    }
+
+    img {
+      width: 100%;
+      max-width: 500px;
+      align-self: center;
+      justify-self: center;
+      z-index: -100;
+      border-radius: 30%;
+      flex-shrink: 0;
+    }
+    .photo_desc {
+      margin-top: 25px;
+      text-align: center;
+      font-size: 1rem;
+      color: $gl_color_creme;
+      background-color: $gl_color_medium_brown;
+
+      .born_and_die {
+        text-align: center;
+        color: $gl_color_white_grey;
+      }
+    }
+  }
+}
+
+

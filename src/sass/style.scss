@@ -1,0 +1,24 @@
+/* Globals */
+@import 'vars';
+
+/* Blocks */
+@import "blocks/header";
+@import 'blocks/main';
+@import 'blocks/tribute-info';
+@import "blocks/biography";
+@import "blocks/footer";
+
+/* Vendor libs */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+/* Default styles */
+body {
+  margin: auto;
+  font-family: monospace, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  color: $gl_color_white_grey;
+  background-color: $gl_color_dark;
+  max-width: 1920px;
+}
+
+

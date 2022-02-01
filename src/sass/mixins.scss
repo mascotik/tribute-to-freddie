@@ -1,0 +1,13 @@
+@mixin fade-out($seconds: 2s) {
+  animation: fade $seconds;
+
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}
