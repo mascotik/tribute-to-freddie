@@ -10,11 +10,12 @@
 
 /* Vendor libs */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto+Mono:wght@100&display=swap');
 
 /* Default styles */
 body {
   margin: auto;
-  font-family: monospace, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Roboto Mono', monospace;
   font-size: 16px;
   color: $gl_color_white_grey;
   background-color: $gl_color_dark;
